@@ -7,7 +7,8 @@ function Cardlist( { robots }) {
             {
                 robots.map((robot, index) => (
                     <Card
-                     id={index}
+                     key={index}
+                     id={robot.id}
                      name={robot.name}
                      email={robot.email}
                      />

@@ -3,10 +3,10 @@ import 'tachyons';
 
 function Card({id, name, email}) {
   return (
-    <div className="bg-light-green dib br4 grow pa2 ma2">
+    <div key={id} className="bg-light-green dib br4 grow pa2 ma3">
       <img src={`https://robohash.org/${id}`} alt="robot"></img>
       <div>
-        <h1 className="tc">{name}</h1>
+        <h2 className="tc">{name}</h2>
         <p className="tc">{email}</p>
       </div>
     </div>
