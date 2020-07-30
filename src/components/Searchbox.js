@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Searchbox({ changeInput }) {
     return (
         <input 
